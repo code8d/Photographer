@@ -42,6 +42,29 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
           flex: 1 1 auto;
 }
 
+/* Background */
+.background {
+  position: absolute;
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+.background .cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(16, 16, 16, 0.5);
+}
+.background .photo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,6 +120,8 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
   padding: 40px 0 50px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  /* Home */
+  /* About */
 }
 .home-gallery .title {
   font-family: inherit;
@@ -135,6 +160,19 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
 .home-gallery .gallery .photo-block .photo:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+.home-gallery .title_margin {
+  margin: 0 0 180px 0;
+}
+.home-gallery .text-block {
+  margin: 0 200px;
+}
+.home-gallery .text-block > *:not(:last-child) {
+  margin: 0 0 30px 0;
+}
+.home-gallery .description {
+  font-size: 20px;
+  color: #fff;
 }
 
 .footer .line {

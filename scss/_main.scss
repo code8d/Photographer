@@ -4,6 +4,9 @@
 .home-gallery {
     padding: 40px 0 50px 0;
     box-sizing: border-box;
+
+    /* Home */
+
     .title {
         font-family: inherit;
         font-size: 18px;
@@ -32,5 +35,21 @@
                 }
             }
         }
+    }
+
+    /* About */
+
+    .title_margin {
+        margin: 0 0 180px 0;
+    }
+    .text-block {
+        margin: 0 200px;
+        & > *:not(:last-child) {
+            margin: 0 0 30px 0;
+        }
+    }
+    .description {
+        font-size: 20px;
+        color: #fff;
     }
 }
