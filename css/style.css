@@ -1,0 +1,28 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+/* Import styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish";
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6, ul, li, a, p {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
