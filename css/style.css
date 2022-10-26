@@ -536,10 +536,8 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
   display: -ms-flexbox;
   display: flex;
 }
-.content .contact > *:not(:last-child) {
-  margin: 0 100px 0 0;
-}
 .content .contact .contact__text {
+  min-width: 165px;
   color: #fff;
 }
 
@@ -780,10 +778,8 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     display: -ms-flexbox;
     display: flex;
   }
-  .content .contact > *:not(:last-child) {
-    margin: 0 100px 0 0;
-  }
   .content .contact .contact__text {
+    min-width: 165px;
     color: #fff;
   }
 }
@@ -1025,10 +1021,8 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     display: -ms-flexbox;
     display: flex;
   }
-  .content .contact > *:not(:last-child) {
-    margin: 0 100px 0 0;
-  }
   .content .contact .contact__text {
+    min-width: 165px;
     color: #fff;
   }
 }
@@ -1272,10 +1266,8 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     display: -ms-flexbox;
     display: flex;
   }
-  .content .contact > *:not(:last-child) {
-    margin: 0 100px 0 0;
-  }
   .content .contact .contact__text {
+    min-width: 165px;
     color: #fff;
   }
 }
@@ -1519,10 +1511,8 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     display: -ms-flexbox;
     display: flex;
   }
-  .content .contact > *:not(:last-child) {
-    margin: 0 100px 0 0;
-  }
   .content .contact .contact__text {
+    min-width: 165px;
     color: #fff;
   }
 }

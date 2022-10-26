@@ -211,10 +211,8 @@
     }
     .contact {
         display: flex;
-        & > *:not(:last-child) {
-            margin: 0 100px 0 0;
-        }
         .contact__text {
+            min-width: 165px;
             color: #fff;
         }
     }
@@ -431,10 +429,8 @@
         }
         .contact {
             display: flex;
-            & > *:not(:last-child) {
-                margin: 0 100px 0 0;
-            }
             .contact__text {
+                min-width: 165px;
                 color: #fff;
             }
         }
@@ -653,10 +649,8 @@
         }
         .contact {
             display: flex;
-            & > *:not(:last-child) {
-                margin: 0 100px 0 0;
-            }
             .contact__text {
+                min-width: 165px;
                 color: #fff;
             }
         }
@@ -876,10 +870,8 @@
         }
         .contact {
             display: flex;
-            & > *:not(:last-child) {
-                margin: 0 100px 0 0;
-            }
             .contact__text {
+                min-width: 165px;
                 color: #fff;
             }
         }
@@ -1099,10 +1091,8 @@
         }
         .contact {
             display: flex;
-            & > *:not(:last-child) {
-                margin: 0 100px 0 0;
-            }
             .contact__text {
+                min-width: 165px;
                 color: #fff;
             }
         }
