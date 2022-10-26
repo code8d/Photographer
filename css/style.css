@@ -130,7 +130,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
   font-weight: 400;
   text-transform: uppercase;
   color: #fff;
-  margin: 0 0 30px 0;
+  margin: 0 0 50px 0;
 }
 .home-gallery .gallery {
   display: -webkit-box;
@@ -147,7 +147,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 600px;
+  height: 590px;
   overflow: hidden;
 }
 .home-gallery .gallery .photo-block .photo {
