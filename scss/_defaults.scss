@@ -22,7 +22,7 @@
 
 /* Background */
 .background {
-    position: absolute;
+    position: fixed;
     z-index: -1;
     display: flex;
     width: 100%;
@@ -37,5 +37,50 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+@media (max-width: 1024px) {
+    .container {
+        min-width: 994px;
+        max-width: 994px;
+        padding: 0 15px;
+        margin: 0 auto;
+        box-sizing: content-box;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        min-width: 738px;
+        max-width: 738px;
+        padding: 0 15px;
+        margin: 0 auto;
+        box-sizing: content-box;
+    }
+}
+@media (max-width: 425px) {
+    .container {
+        min-width: 395px;
+        max-width: 395px;
+        padding: 0 15px;
+        margin: 0 auto;
+        box-sizing: content-box;
+    }
+}
+@media (max-width: 375px) {
+    .container {
+        min-width: 345px;
+        max-width: 345px;
+        padding: 0 15px;
+        margin: 0 auto;
+        box-sizing: content-box;
+    }
+}
+@media (max-width: 325px) {
+    .container {
+        min-width: 345px;
+        max-width: 345px;
+        padding: 0 15px;
+        margin: 0 auto;
+        box-sizing: content-box;
     }
 }
