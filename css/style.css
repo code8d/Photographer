@@ -122,6 +122,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
           box-sizing: border-box;
   /* Home */
   /* About */
+  /* Work */
 }
 .home-gallery .title {
   font-family: inherit;
@@ -158,8 +159,8 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
   transition: 1.3s ease-in-out;
 }
 .home-gallery .gallery .photo-block .photo:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.05) rotate(1deg);
+          transform: scale(1.05) rotate(1deg);
 }
 .home-gallery .title_margin {
   margin: 0 0 180px 0;
@@ -173,6 +174,75 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
 .home-gallery .description {
   font-size: 20px;
   color: #fff;
+}
+.home-gallery .gallery-work .block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.home-gallery .gallery-work .block_1 .card-block_1 > *:nth-child(1) {
+  height: 380px;
+}
+.home-gallery .gallery-work .block_1 .card-block_1 > *:nth-child(2) {
+  height: 570px;
+}
+.home-gallery .gallery-work .block_1 .card-block_2 > *:nth-child(1) {
+  height: 980px;
+}
+.home-gallery .gallery-work .block_1 .card-block_3 > *:nth-child(1) {
+  height: 570px;
+}
+.home-gallery .gallery-work .block_1 .card-block_3 > *:nth-child(2) {
+  height: 380px;
+}
+.home-gallery .gallery-work .block_2 .card-block_1 > *:nth-child(1) {
+  height: 980px;
+}
+.home-gallery .gallery-work .block_2 .card-block_2 > *:nth-child(1) {
+  height: 494px;
+}
+.home-gallery .gallery-work .block_2 .card-block_2 > *:nth-child(2) {
+  height: 456px;
+}
+.home-gallery .gallery-work .block_2 .card-block_3 > *:nth-child(1) {
+  height: 418px;
+}
+.home-gallery .gallery-work .block_2 .card-block_3 > *:nth-child(2) {
+  height: 532px;
+}
+.home-gallery .card-block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.home-gallery .card-block .photo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0 30px 0;
+  overflow: hidden;
+}
+.home-gallery .card-block .photo-block .photo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 1.3s ease-in-out;
+  transition: 1.3s ease-in-out;
+}
+.home-gallery .card-block .photo-block .photo:hover {
+  -webkit-transform: scale(1.05) rotate(1deg);
+          transform: scale(1.05) rotate(1deg);
+}
+
+.home-gallery_padding {
+  padding: 40px 0 20px 0;
 }
 
 .footer .line {
