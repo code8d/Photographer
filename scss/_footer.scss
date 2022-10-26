@@ -20,6 +20,10 @@
         background: #303030;
         border-radius: 50%;
         box-shadow: 0 2px 2px rgba(0, 0, 0, .15);
+        transition: .3s ease-in-out;
+        &:hover {
+            transform: translateY(-5px);
+        }
         .icon {
             width: 100%;
             height: 100%;
