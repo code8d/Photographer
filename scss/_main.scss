@@ -1,9 +1,13 @@
 .main {
-    flex: 1 1 auto;
+    width: 100%;
+    min-height: 100%;
 }
 .content {
+    display: flex;
+    flex-direction: column;
     padding: 40px 0 50px 0;
     box-sizing: border-box;
+    height: 100%;
 
     /* Home */
 
@@ -194,6 +198,29 @@
         justify-content: center;
         text-transform: uppercase;
         color: #fff;
+    }
+
+    /* Contact */
+
+    .contact-block {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 50px 0 0 0;
+        .contact-wrapper {
+            & > *:not(:last-child) {
+                margin: 0 0 20px 0;
+            }
+        }
+    }
+    .contact {
+        display: flex;
+        & > *:not(:last-child) {
+            margin: 0 100px 0 0;
+        }
+        .contact__text {
+            color: #fff;
+        }
     }
 }
 .content_padding {
