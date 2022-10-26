@@ -123,6 +123,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
   /* Home */
   /* About */
   /* Work */
+  /* Pricing */
 }
 .home-gallery .title {
   font-family: inherit;
@@ -239,6 +240,85 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
 .home-gallery .card-block .photo-block .photo:hover {
   -webkit-transform: scale(1.05) rotate(1deg);
           transform: scale(1.05) rotate(1deg);
+}
+.home-gallery .orders-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.home-gallery .orders-block .order-block {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.home-gallery .orders-block .order-block .order {
+  position: relative;
+  height: 540px;
+  margin: 0 0 35px 0;
+}
+.home-gallery .orders-block .order-block .order .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-gallery .orders-block .order-block .order:hover .order__cover {
+  opacity: 1;
+}
+.home-gallery .order__cover {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.home-gallery .order__cover .bag-block {
+  width: 30px;
+  height: 30px;
+  padding: 30px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.home-gallery .order__cover .bag-block .icon {
+  width: 100%;
+  height: 100%;
+}
+.home-gallery .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .home-gallery_padding {
