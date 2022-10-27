@@ -220,6 +220,143 @@
 .content_padding {
     padding: 40px 0 20px 0;
 }
+
+.modal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+}
+.modal {
+    position: relative;
+    display: block;
+    top: 20%;
+    width: 640px;
+    z-index: 15;
+    background: #121212;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .25);
+}
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+.form-name {
+    display: flex;
+    align-items: center;
+    background: #202020;
+    height: 45px;
+    .name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        margin: 0 -40px 0 0;
+    }
+    .close {
+        display: flex;
+        padding: 13px;
+        outline: none;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        .icon {
+            width: 14px;
+            height: 14px;
+            object-fit: cover;
+        }
+    }
+}
+.form-block {
+    display: flex;
+    .type-block {
+        flex: 0 0 50%;
+        position: relative;
+        display: flex;
+        height: 460px;
+        .type {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 25px 20px;
+            background: rgba(0, 0, 0, .5);
+            box-sizing: border-box;
+            .name {
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+        .photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .contact-block {
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 31px;
+        box-sizing: border-box;
+        & > *:not(:last-child) {
+            margin: 0 0 15px 0;
+        }
+        .input {
+            display: flex;
+            align-items: center;
+            height: 40px;
+        }
+        .input, .textarea {
+            font-size: 14px;
+            outline: none;
+            border: none;
+            padding: 5px 15px;
+            box-sizing: border-box;
+            background: #202020;
+            color: #fff;
+        }
+        .input:focus, .textarea:focus {
+            box-shadow: 0 0 7px 3px rgba(0, 0, 0, .1);
+        }
+        .textarea {
+            min-height: 125px;
+            max-height: 250px;
+            min-width: 258px;
+            max-width: 258px;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 40px;
+            outline: none;
+            border: 1px solid #202020;
+            background: transparent;
+            color: #fff;
+            font-family: inherit;
+            font-size: 16px;
+            cursor: pointer;
+            transition: .3s ease-in-out;
+            &:hover {
+                background: #202020;
+            }
+        }
+        ::placeholder {
+            font-family: inherit;
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .content {
         display: flex;
