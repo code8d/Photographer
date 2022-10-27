@@ -151,6 +151,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  cursor: pointer;
 }
 .header .hamburger > *:not(:last-child) {
   margin: 0 0 7px 0;
@@ -219,6 +220,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    cursor: pointer;
   }
   .header .hamburger > *:not(:last-child) {
     margin: 0 0 7px 0;
@@ -289,6 +291,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    cursor: pointer;
   }
   .header .hamburger > *:not(:last-child) {
     margin: 0 0 7px 0;
@@ -357,6 +360,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    cursor: pointer;
   }
   .header .hamburger > *:not(:last-child) {
     margin: 0 0 7px 0;
@@ -425,6 +429,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    cursor: pointer;
   }
   .header .hamburger > *:not(:last-child) {
     margin: 0 0 7px 0;
@@ -493,6 +498,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
+    cursor: pointer;
   }
   .header .hamburger > *:not(:last-child) {
     margin: 0 0 7px 0;
