@@ -43,12 +43,11 @@
             text-transform: uppercase;
             height: 100px;
             padding: 0 5px;
-            // &:hover .link__text {
-            //     transform: translateY(-10px);
-            // }
-            // .link__text {
-            // transition: .3s ease-in-out;
-            // }
+            .link__text {
+            }
+            .active {
+                transform: translateY(-10px);
+            }
         }
     }
 }
