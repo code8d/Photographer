@@ -811,6 +811,105 @@
             }
         }
     }
+    .form-block {
+        display: none;
+        .type-block {
+            flex: 0 0 50%;
+            position: relative;
+            display: flex;
+            height: 460px;
+            .cover {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .5);
+                opacity: 0;
+                transition: .3s ease-in-out;
+                .change {
+                    display: flex;
+                    outline: 0;
+                    border: 0;
+                    background: rgba(0, 0, 0, .5);
+                    border-radius: 50%;
+                    padding: 12.5px;
+                    cursor: pointer;
+                    .icon {
+                        width: 25px;
+                        height: 25px;
+                        object-fit: cover;
+                    }
+                }
+            }
+            &:hover .cover{
+                opacity: 1;
+            }
+            .photo {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .contact-block {
+            flex: 0 0 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 31px;
+            box-sizing: border-box;
+            & > *:not(:last-child) {
+                margin: 0 0 15px 0;
+            }
+            .input {
+                display: flex;
+                align-items: center;
+                height: 40px;
+            }
+            .input, .textarea {
+                font-size: 14px;
+                outline: none;
+                border: none;
+                padding: 5px 15px;
+                box-sizing: border-box;
+                background: #202020;
+                color: #fff;
+            }
+            .input:focus, .textarea:focus {
+                box-shadow: 0 0 7px 3px rgba(0, 0, 0, .1);
+            }
+            .textarea {
+                min-height: 125px;
+                max-height: 250px;
+                min-width: 258px;
+                max-width: 258px;
+            }
+            .button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 40px;
+                outline: none;
+                border: 1px solid #202020;
+                background: transparent;
+                color: #fff;
+                font-family: inherit;
+                font-size: 16px;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover {
+                    background: #202020;
+                }
+            }
+            ::placeholder {
+                font-family: inherit;
+                font-size: 14px;
+                color: rgba(255, 255, 255, .3);
+            }
+        }
+    }
 }
 @media (max-width: 425px) {
     .content {
@@ -1017,7 +1116,7 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-            padding: 50px 0 0 0;
+            padding: 0;
             .contact-wrapper {
                 & > *:not(:last-child) {
                     margin: 0 0 20px 0;
@@ -1026,9 +1125,112 @@
         }
         .contact {
             display: flex;
+            flex-wrap: wrap;
+            & > *:not(:last-child) {
+                margin: 0 0 10px 0;
+            }
             .contact__text {
                 min-width: 165px;
                 color: #fff;
+            }
+        }
+    }
+    .form-block {
+        display: none;
+        .type-block {
+            flex: 0 0 50%;
+            position: relative;
+            display: flex;
+            height: 460px;
+            .cover {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .5);
+                opacity: 0;
+                transition: .3s ease-in-out;
+                .change {
+                    display: flex;
+                    outline: 0;
+                    border: 0;
+                    background: rgba(0, 0, 0, .5);
+                    border-radius: 50%;
+                    padding: 12.5px;
+                    cursor: pointer;
+                    .icon {
+                        width: 25px;
+                        height: 25px;
+                        object-fit: cover;
+                    }
+                }
+            }
+            &:hover .cover{
+                opacity: 1;
+            }
+            .photo {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .contact-block {
+            flex: 0 0 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 31px;
+            box-sizing: border-box;
+            & > *:not(:last-child) {
+                margin: 0 0 15px 0;
+            }
+            .input {
+                display: flex;
+                align-items: center;
+                height: 40px;
+            }
+            .input, .textarea {
+                font-size: 14px;
+                outline: none;
+                border: none;
+                padding: 5px 15px;
+                box-sizing: border-box;
+                background: #202020;
+                color: #fff;
+            }
+            .input:focus, .textarea:focus {
+                box-shadow: 0 0 7px 3px rgba(0, 0, 0, .1);
+            }
+            .textarea {
+                min-height: 125px;
+                max-height: 250px;
+                min-width: 258px;
+                max-width: 258px;
+            }
+            .button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 40px;
+                outline: none;
+                border: 1px solid #202020;
+                background: transparent;
+                color: #fff;
+                font-family: inherit;
+                font-size: 16px;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                &:hover {
+                    background: #202020;
+                }
+            }
+            ::placeholder {
+                font-family: inherit;
+                font-size: 14px;
+                color: rgba(255, 255, 255, .3);
             }
         }
     }
@@ -1238,7 +1440,7 @@
             display: flex;
             flex-direction: column;
             height: 100%;
-            padding: 50px 0 0 0;
+            padding: 0;
             .contact-wrapper {
                 & > *:not(:last-child) {
                     margin: 0 0 20px 0;
@@ -1247,6 +1449,7 @@
         }
         .contact {
             display: flex;
+            flex-wrap: wrap;
             .contact__text {
                 min-width: 165px;
                 color: #fff;

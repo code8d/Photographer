@@ -13,27 +13,33 @@ linkText.forEach(link => {
 
 const modal = document.querySelector('.modal-wrapper')
 const order = document.querySelectorAll('.bag-block')
-const close = document.querySelector('.close')
+const closeBtn = document.querySelector('.close')
 const bg = document.querySelector('.bg')
 const header = document.querySelector('.header')
 
 order.forEach(ord => {
     ord.addEventListener('click', () => {
 
+        if (document.documentElement.clientWidth < 1024) {
+            return
+        }
         modal.classList.add('show')
     })
 })
 
-modal.addEventListener('click', () => {
-    console.log('work')
-})
+function close() {
+    if (!closeBtn) {
+        return
+    }
+    closeBtn.addEventListener('click', () => {
+        modal.classList.remove('show')
+    })   
+}
+close()
 
-close.addEventListener('click', () => {
-    modal.classList.remove('show')
+const hamburger = document.querySelector('.hamburger')
+const menu = document.querySelector('.nav-menu')
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('show_menu')
 })
-// bg.addEventListener('click', () => {
-//     modal.classList.remove('show')
-// })
-// header.addEventListener('click', () => {
-//     modal.classList.remove('show')
-// })
