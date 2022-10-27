@@ -31,9 +31,9 @@ modal.addEventListener('click', () => {
 close.addEventListener('click', () => {
     modal.classList.remove('show')
 })
-bg.addEventListener('click', () => {
-    modal.classList.remove('show')
-})
-header.addEventListener('click', () => {
-    modal.classList.remove('show')
-})
+// bg.addEventListener('click', () => {
+//     modal.classList.remove('show')
+// })
+// header.addEventListener('click', () => {
+//     modal.classList.remove('show')
+// })

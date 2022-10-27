@@ -32,6 +32,8 @@
         position: absolute;
         width: 100%;
         height: 100%;
+        object-fit: cover;
+        object-position: top;
         background: rgba(16, 16, 16, .5);
     }
     .photo {
@@ -76,10 +78,10 @@
         box-sizing: content-box;
     }
 }
-@media (max-width: 325px) {
+@media (max-width: 320px) {
     .container {
-        min-width: 345px;
-        max-width: 345px;
+        min-width: 290px;
+        max-width: 290px;
         padding: 0 15px;
         margin: 0 auto;
         box-sizing: content-box;
