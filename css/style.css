@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
   width: 35px;
   height: 2px;
   background: #fff;
-  border-radius: 50%;
+  border-radius: 50px;
 }
 .header .hamburger .line:nth-child(1) {
   width: 30px;
@@ -285,7 +285,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     width: 35px;
     height: 2px;
     background: #fff;
-    border-radius: 50%;
+    border-radius: 50px;
   }
   .header .hamburger .line:nth-child(1) {
     width: 30px;
@@ -356,7 +356,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     width: 35px;
     height: 2px;
     background: #fff;
-    border-radius: 50%;
+    border-radius: 50px;
   }
   .header .hamburger .line:nth-child(1) {
     width: 30px;
@@ -425,7 +425,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     width: 35px;
     height: 2px;
     background: #fff;
-    border-radius: 50%;
+    border-radius: 50px;
   }
   .header .hamburger .line:nth-child(1) {
     width: 30px;
@@ -494,7 +494,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     width: 35px;
     height: 2px;
     background: #fff;
-    border-radius: 50%;
+    border-radius: 50px;
   }
   .header .hamburger .line:nth-child(1) {
     width: 30px;
@@ -563,7 +563,7 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     width: 35px;
     height: 2px;
     background: #fff;
-    border-radius: 50%;
+    border-radius: 50px;
   }
   .header .hamburger .line:nth-child(1) {
     width: 30px;
@@ -2436,8 +2436,8 @@ h1, h2, h3, h4, h5, h6, ul, li, a, p {
     border-radius: 50%;
     -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
             box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
+    -webkit-transition: none;
+    transition: none;
   }
   .media-block .social:hover {
     -webkit-transform: none;

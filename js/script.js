@@ -14,8 +14,6 @@ linkText.forEach(link => {
 const modal = document.querySelector('.modal-wrapper')
 const order = document.querySelectorAll('.bag-block')
 const closeBtn = document.querySelector('.close')
-const bg = document.querySelector('.bg')
-const header = document.querySelector('.header')
 
 order.forEach(ord => {
     ord.addEventListener('click', () => {
